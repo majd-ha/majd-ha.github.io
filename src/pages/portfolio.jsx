@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import blogimage3 from "../assets/blogappimg3.png";
 import ratingImage from "../assets/ratingpro.png";
 import simpleblog from "../assets/simpleblog.png";
+import smallshop from "../assets/smallshop.png";
 import ProCard from "../components/ProCard";
 export default function Experience() {
   const cardDetails = [
@@ -25,7 +26,7 @@ export default function Experience() {
       img: blogimage3,
       completed: true,
       url: "https://blog-react-new.onrender.com/",
-      desc: "built with mern",
+      desc: " MERN & JWt auth",
     },
 
     {
@@ -36,10 +37,18 @@ export default function Experience() {
       url: "https://majdblog.onrender.com/",
       desc: "React & Node with Json server",
     },
+    {
+      id: 3,
+      title: "small shop",
+      img: smallshop,
+      completed: true,
+      url: "https://simpleshop.onrender.com/",
+      desc: "React & Free Api",
+    },
   ];
   return (
-    <div className="w-desk max-h-screen" id="experience">
-      <h1 className="heading">projects i worked on</h1>
+    <div className="w-desk max-h-screen" id="portfolio">
+      <h1 className="heading">Portfolio</h1>
       <div className="flex flex-wrap mt-5 max-sm:block">
         <Swiper
           style={{ height: "fit-content", width: "100%" }}

@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Experience from "./pages/Experience";
+import Footer from "./pages/Footer";
 import Home from "./pages/Home";
+import Portfolio from "./pages/portfolio";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
 
         <About />
 
-        <Experience />
+        <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

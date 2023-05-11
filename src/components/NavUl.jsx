@@ -1,4 +1,5 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 export default function NavLinks({ ulcn, licn, setactiv }) {
@@ -13,7 +14,7 @@ export default function NavLinks({ ulcn, licn, setactiv }) {
     },
     {
       id: 3,
-      label: "experience",
+      label: "portfolio",
     },
     {
       id: 4,
@@ -39,6 +40,9 @@ export default function NavLinks({ ulcn, licn, setactiv }) {
           </Link>
         );
       })}
+      <a href="https://github.com/majd-ha" target="_blank">
+        <BsGithub size={"2rem"} color="white" />
+      </a>
     </ul>
   );
 }

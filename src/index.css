@@ -35,7 +35,7 @@
     @apply px-2 cursor-pointer hover:scale-105 text-white duration-300 capitalize;
   }
   .heading {
-    @apply text-white text-2xl max-sm:text-xl shadow-2xl mx-auto my-10 p-5 text-center font-rale border border-transparent border-b-red-500;
+    @apply text-white text-2xl max-sm:text-xl capitalize shadow-2xl mx-auto my-10 p-5 text-center font-rale border border-transparent border-b-red-500;
   }
   .ulcol {
     @apply flex justify-center gap-8 flex-col items-center absolute top-0 left-0 w-[100%] h-screen grad;

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CustomInput({ type, icon, name, placeholder }) {
   return (
-    <div className="w-[90%] h-[35%] relative  ">
+    <div className="w-[90%] max-sm:w-[100%] h-[35%] relative  ">
       <input
         placeholder={placeholder}
         name={name}
