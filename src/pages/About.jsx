@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div id="about" className="w-desk text-white min-h-screen pt-10">
       <h1 className="heading">About</h1>
-      <p className="mt-5 leading-10">
+      <p className="mt-5 leading-10  border-l-4 pl-3 italic">
         As a self-taught web developer, I have spent countless hours learning
         and mastering the skills necessary to build stunning and functional
         websites. With a passion for coding and a drive for self-improvement, I
