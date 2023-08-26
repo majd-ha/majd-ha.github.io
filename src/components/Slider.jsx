@@ -4,10 +4,21 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiMongodb, SiRedux, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
 export default function Slider({ setSkill }) {
   const scrollRef = useRef();
 
   const iconarray = [
+    {
+      id: "nextjs",
+      description: "good knowledge",
+      icon: <TbBrandNextjs />,
+    },
+    {
+      id: "typescript",
+      description: "experienced",
+      icon: <TbBrandTypescript />,
+    },
     {
       id: "html",
       description: "experienced ",

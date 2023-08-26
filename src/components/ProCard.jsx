@@ -14,7 +14,7 @@ export default function ProCard({ imgsrc, desc, link, title, completed }) {
           under dev
         </p>
         <img
-          src={imgsrc}
+          src={`http://127.0.0.1:3001/images/${imgsrc}`}
           alt="loading image"
           width={"100%"}
           height={"80%"}
