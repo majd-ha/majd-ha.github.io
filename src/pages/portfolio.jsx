@@ -13,12 +13,15 @@ import ProCard from "../components/ProCard";
 export default function Experience() {
   const base = "https://backenddashboard.onrender.com";
   const [cardDetails, setCardDetails] = useState([]);
+  const [isLoading, setisLoading] = useState(false);
   useEffect(() => {
     const getProjects = async () => {
+      setisLoading(true);
       const res = await fetch(`${base}/`);
       if (res.ok) {
         const data = await res.json();
         setCardDetails(data.projects);
+        setisLoading(false);
       }
     };
     getProjects();
@@ -61,6 +64,7 @@ export default function Experience() {
   return (
     <div className="w-desk max-h-screen" id="portfolio">
       <h1 className="heading">Portfolio</h1>
+
       <div className="flex flex-wrap mt-5 max-sm:block">
         <Swiper
           style={{ height: "fit-content", width: "100%" }}
@@ -86,22 +90,27 @@ export default function Experience() {
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         >
-          {cardDetails.map((pro) => {
-            return (
-              <SwiperSlide
-                className="h-fit w-[50%] max-sm:w-[100%] select-none my-2"
-                key={pro._id}
-              >
-                <ProCard
-                  title={pro.name}
-                  imgsrc={pro.img}
-                  link={pro.link}
-                  desc={pro.description}
-                  completed={!pro.dev}
-                />
-              </SwiperSlide>
-            );
-          })}
+          {isLoading ? (
+            <p className="text-center text-white my-3 ">Loading</p>
+          ) : (
+            cardDetails.map((pro) => {
+              return (
+                <SwiperSlide
+                  className="h-fit w-[50%] max-sm:w-[100%] select-none my-2"
+                  key={pro._id}
+                >
+                  <ProCard
+                    title={pro.name}
+                    imgsrc={pro.img}
+                    link={pro.link}
+                    desc={pro.description}
+                    completed={!pro.dev}
+                  />
+                </SwiperSlide>
+              );
+            })
+          )}
+
           <div className="swiper-pagination my-2"></div>
         </Swiper>
       </div>

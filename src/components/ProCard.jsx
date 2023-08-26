@@ -14,7 +14,7 @@ export default function ProCard({ imgsrc, desc, link, title, completed }) {
           under dev
         </p>
         <img
-          src={`http://127.0.0.1:3001/images/${imgsrc}`}
+          src={`https://backenddashboard.onrender.com/images/${imgsrc}`}
           alt="loading image"
           width={"100%"}
           height={"80%"}
