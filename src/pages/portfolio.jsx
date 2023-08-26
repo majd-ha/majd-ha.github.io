@@ -11,10 +11,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import smallshop from "../assets/smallshop.png";
 import ProCard from "../components/ProCard";
 export default function Experience() {
+  const base = "https://backenddashboard.onrender.com";
   const [cardDetails, setCardDetails] = useState([]);
   useEffect(() => {
     const getProjects = async () => {
-      const res = await fetch("http://127.0.0.1:3001/");
+      const res = await fetch(`${base}/`);
       if (res.ok) {
         const data = await res.json();
         setCardDetails(data.projects);
