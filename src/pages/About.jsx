@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div id="about" className="w-desk text-white min-h-screen pt-10">
       <h1 className="heading">About</h1>
-      <p className="mt-5 leading-10  border-l-4 pl-3 italic">
+      <p className="mt-5 leading-10  border-l-4 pl-3 italic line-through">
         As a self-taught web developer, I have spent countless hours learning
         and mastering the skills necessary to build stunning and functional
         websites. With a passion for coding and a drive for self-improvement, I
@@ -25,6 +25,9 @@ export default function About() {
         With a passion for problem-solving and a commitment to continuous
         improvement, I am excited to see where my skills as a self-taught web
         developer will take me next.
+      </p>
+      <p className="mt-5 leading-10  border-l-4 pl-3 font-bold uppercase text-[#F97316]">
+        fast learner
       </p>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 // import { BsIncognito } from "react-icons/bs";
 import { HiCode } from "react-icons/hi";
-import som from "../assets/fotor-ai-20230506211327.jpg";
+import som from "../assets/avatar.jpg";
 import Slider from "./Slider";
 export default function PopCard({ st, sk }) {
   const [isImg, setIsImg] = useState(false);
@@ -43,7 +43,7 @@ export default function PopCard({ st, sk }) {
       <div className="absolute bottom-0 left-0 contentheight bg-[#292729] overflow-hidden rounded-xl  w-[100%] max-sm:smcontent max-sm:smcontentheight  p-3">
         <div className="mb-5  ml-[310px] max-sm:ml-0 flex flex-col max-sm:justify-center max-sm:items-center md:w-contentdev max-sm:w-full px-4 md:mb-28">
           <h1 className="font-rale text-3xl max-sm:text-center  capitalize  w-full ">
-            {!isImg ? "**********" : " majd alfarfour"}
+            majd alfarfour
           </h1>
           <p className="italic">fullstack web dev</p>
         </div>

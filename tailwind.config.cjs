@@ -26,16 +26,16 @@ module.exports = {
         },
         gardroll: {
           "0%": {
-            borderColor: "blue transparent transparent",
+            borderColor: "red transparent transparent",
           },
           "50%": {
-            borderColor: "transparent blue transparent transparent",
+            borderColor: "transparent red transparent transparent",
           },
           "75%": {
-            borderColor: "transparent transparent blue transparent",
+            borderColor: "transparent transparent red transparent",
           },
           "100%": {
-            borderColor: "transparent transparent transparent blue",
+            borderColor: "transparent transparent transparent red",
           },
         },
       },
@@ -51,5 +51,5 @@ module.exports = {
       contentdev: "calc(1*(100% - 320px))",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
